@@ -8,8 +8,9 @@
 Here is a link to the lecture slides for reference: https://drive.google.com/open?id=1c5KA1m1bOtmralSB-G1ufT18s_Z3yB7k
 
 ## Step 1: Implement a plain GAN
-Use `gan_template.py` as a template.
+So that you can quickly iterate, we'll be using a very simple two-dimensional normally-distributed 'dataset' for now. Use `gan_template.py` as a template: it includes functionality to generate training data from specified 2D Gaussians, a training loop template, and an automatically-updating plot of real vs generated data.
 
+You will need to:
  - Define a simple feed-forward architecture for the generator and the discriminator.
  - Remember that the generator needs to generate 2D points, and the discriminator needs to output a probability of each example being real.
  - In the training loop, use your generator to generate a batch of ‘fake’ data.
