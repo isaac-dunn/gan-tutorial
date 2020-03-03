@@ -34,7 +34,7 @@ In the original GAN paper, the authors suggest that it may be better to train th
 Why might this make training easier? Does it make a noticeable difference?
 
 ## Step 4: Implement the Wasserstein GAN
-Either with weight clipping or with the gradient penalty.
+Either with weight clipping or with the gradient penalty. I'd suggest the gradient penalty - this avoids having to tune the clipping magnitude hyperparameter.
 
 For weight clipping you'll need to `apply` a function to the discriminator that `clamps` its `weight.data` values.
 
